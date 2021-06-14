@@ -1,0 +1,155 @@
+Vou separar passo a passo, e usar tags de spoiler:
+1 Passo:
+Abrir o "instructions.txt" e ler essa parte:
+
+"The detective, Kyle Pumbinner, said the crime scene report is on the `gtpd-archive` branch. He
+doesn't really remember the report ID... But he knows it was the first report he submitted after his
+son's ninth birthday (which was Saturday, July 20th), and it was the only report he submitted that
+week."
+
+-=
+=-
+=-
+=-
+=-
+=-
+=-
+-=
+=-
+=-
+=-
+-=
+-=
+=-
+-=
+
+=-
+-==
+-
+=-=
+--=
+SPOILER 2 PASSO ABAIXO
+-=
+=-
+-=
+=-
+-=
+-=
+=-
+=-
+-=
+-=
+=-
+-=
+-=
+-=
+Usar o comando git checkout gtpd-archive  e acessar a branch do gtpd-archive
+Usar o comando git log --since='2018-07-20' --until='2018-08-01' para filrar alguns logs e pegar o relevante (O feito pelo detetive Kyle
+o unico na semana, que é do dia 24 de julho
+
+que é esse aqui:
+Crime scene report #956171
+    
+    Murder took place ten days ago, on July 14th. Coroner report says it was som
+e time between 16:13 and
+    19:37.
+    
+    According to the security guard that sat at the entrance to the factory, on 
+the day of the murder no
+    one came through the front door. So that leaves the back door, which require
+s an RFID card to open.
+    
+    With the help of the factory's IT department I managed to cherry-pick the re
+levant commits from the
+    access log for all the electronically locked facilities on premise. They're 
+on my personal
+    'detectives/kpumbinner' branch. But they said the program doesn't have a search button... I'll have
+    to sift through it to find who used "BACKDOOR_332". I put the log file in the evidence folder to
+    look through later.
+e julho"
+
+-=
+
+=-=-
+=
+=-
+=-
+=
+=
+=-
+=-
+-=
+-=
+=-
+
+-=
+=-
+-=
+=-
+=-
+=-
+-=
+-=
+-=-
+=
+-=-=
+-=
+PASSO 3 ABAIXO
+=-
+=
+-
+=
+==
+
+=-=
+-
+=--=
+=
+=
+-=
+
+=
+entrar no branch correto com "git checkout detectives/kpumbinner"
+usar git log e se atentar aos horarios dito acima
+feito isso, podemos buscar o endereço das pessoas usando o comando grep
+Exemplo: "grep residents.txt Sybil Glorp"
+-=
+=-
+=-
+=-
+=-
+
+-=-
+=
+-=
+=-
+-=
+-=
+-=
+-=
+-=
+-=
+-=--=
+PASSO 4 ABAIXO
+=-
+=
+-=-
+=-
+=-
+=-
+-=
+=-
+==-
+=-
+-=
+=-
+=-
+
+=-
+=-
+-==-
+Com o comando git tag git tag podemos checar o caminho das ruas, e depois acessa-las com checkout
+Exemplo: git checkout street/larch_walk
+Feito isso, estou ainda tentando descobrir como acesso a casa de numero N na rua, ou como investigo a pessoa. Mas deve ter como visualizar o perimetro envolta
+interagindo com a hash dentro de "investigate" de alguma forma. (utilizando cat investigate) 
+
