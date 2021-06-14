@@ -1,2 +1,3 @@
 Arquivo Main de Dicas para solucionar o mistério
 Para começar de um git clone git@github.com:nivbend/gitstery.git
+Primeira Dica: No arquivo de instruções o detetive Kyle Pumbinner informa que o primeiro Report de Crime está na Branch 'gtpd-archive' 
